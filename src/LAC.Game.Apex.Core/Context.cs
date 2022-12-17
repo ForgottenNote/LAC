@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
-using Tanya.Driver.Interfaces;
+using LAC.Driver.Interfaces;
 
-namespace Tanya.Game.Apex.Core
+namespace LAC.Game.Apex.Core
 {
     public abstract class Context : IDriver, ILogger
     {
