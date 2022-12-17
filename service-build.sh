@@ -4,7 +4,7 @@ rm -rf "bin"
 # ====================
 # 
 # ====================
-dotnet publish "src/LAC/LAC.csproj" --no-self-contained --output "bin" --runtime linux-x64 \
+dotnet publish "src/Tanya/Tanya.csproj" --no-self-contained --output "bin" --runtime linux-x64 \
   "-p:Configuration=Release" \
   "-p:DebugType=None" \
   "-p:GenerateRuntimeConfigurationFiles=true" \
@@ -27,7 +27,7 @@ read -p "ServiceName: " serviceName
 # 
 # ====================
 rootPath=\$(realpath .)
-execPath=\$(realpath "LAC")
+execPath=\$(realpath "Tanya")
 servPath="/etc/systemd/system/\${serviceName}.service"
 
 # ====================

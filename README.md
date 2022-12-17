@@ -1,6 +1,6 @@
-# LAC
+# Tanya
 
-
+"Victory. Such a tempting thing. Naturally, everyone wants to savor a taste." - Tanya von Degurechaff
 
 # Installation
 
@@ -20,7 +20,7 @@ See [this page for more information](https://www.cyberciti.biz/faq/how-can-i-log
 
 ## (2) Enable Process Isolation
 
-We'll ensure that non-root users are unable to see the `LAC` service.
+We'll ensure that non-root users are unable to see the `project-tanya` service.
 
 1. Switch to the `root` user:
 
@@ -43,7 +43,7 @@ vim /etc/fstab
 4. Add the following line:
 
 ```
-proc /proc proc defaults,nosuid,nodev,noexec,relatime,hidepid=2 0 0
+proc /proc proc defaults,nosuid,nodev,noexec,relatime,hidepid=1 0 0
 ```
 
 5. Reboot your system:
@@ -98,7 +98,7 @@ See [this page for more information](https://www.kernel.org/doc/Documentation/se
 
 ## (4) Install .NET
 
-We'll ensure that `LAC` can be compiled with *.NET*.
+We'll ensure that `project-tanya` can be compiled with *.NET*.
 
 1. Switch to the `root` user:
 
@@ -119,7 +119,7 @@ apt update && apt install -y dotnet-sdk-6.0
 
 ## (5) Build Service
 
-We'll build `LAC`, so we can register it as a service:
+We'll build `project-tanya`, so we can register it as a service:
 
 1. Switch to `root` user:
 
@@ -142,13 +142,13 @@ apt install -y git
 4. Clone this repository:
 
 ```
-git clone https://github.com/ForgottenNote/LAC/
+git clone https://github.com/XRadius/project-tanya
 ```
 
-5. Open the `LAC` directory:
+5. Open the `project-tanya` directory:
 
 ```
-cd ~/LAC
+cd ~/project-tanya
 ```
 
 6. Enable execution of the *build script*:
@@ -165,12 +165,12 @@ chmod +x service-build.sh
 
 ## (6) Install Service
 
-We'll install `LAC` as a service:
+We'll install `project-tanya` as a service:
 
 1. Open the `bin` directory:
 
 ```
-cd ~/LAC/bin
+cd ~/project-tanya/bin
 ```
 
 2. Run the *installation script* and follow the instructions:
@@ -179,4 +179,4 @@ cd ~/LAC/bin
 ./service-install.sh
 ```
 
-Once you've followed these instructions, `LAC` is ready for use!
+Once you've followed these instructions, `project-tanya` is ready for use!

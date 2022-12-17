@@ -1,10 +1,10 @@
 #!/bin/bash
-serviceName="LAC"
+serviceName="project-tanya"
 
 # ====================
 # 
 # ====================
-dotnet publish "src/LAC/LAC.csproj" --output "bin" --runtime linux-x64 --self-contained \
+dotnet publish "src/Tanya/Tanya.csproj" --output "bin" --runtime linux-x64 --self-contained \
   "-p:Configuration=Release" \
   "-p:DebugType=None" \
   "-p:GenerateRuntimeConfigurationFiles=true" \
@@ -13,8 +13,8 @@ dotnet publish "src/LAC/LAC.csproj" --output "bin" --runtime linux-x64 --self-co
 # ====================
 # 
 # ====================
-if [ $serviceName != "LAC" ]; then
-  mv "bin/LAC" "bin/${serviceName}"
+if [ $serviceName != "Tanya" ]; then
+  mv "bin/Tanya" "bin/${serviceName}"
 fi
 
 # ====================
