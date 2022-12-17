@@ -20,7 +20,7 @@ See [this page for more information](https://www.cyberciti.biz/faq/how-can-i-log
 
 ## (2) Enable Process Isolation
 
-We'll ensure that non-root users are unable to see the `project-tanya` service.
+We'll ensure that non-root users are unable to see the `LAC` service.
 
 1. Switch to the `root` user:
 
