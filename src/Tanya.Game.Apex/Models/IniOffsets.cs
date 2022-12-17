@@ -35,7 +35,7 @@ namespace Tanya.Game.Apex.Models
 
         #region Implementation of IOffsets Properties
 
-        public uint ButtonInAttack => _ini.Get("Buttons", "in_attack");
+        public uint ButtonInAttack => _ini.Get("Buttons", "in_use_XBUTTON2");
         public uint ButtonInSpeed => _ini.Get("Buttons", "in_speed");
         public uint ButtonInZoom => _ini.Get("Buttons", "in_zoom");
         public uint CoreEntityList => _ini.Get("Miscellaneous", "cl_entitylist");
