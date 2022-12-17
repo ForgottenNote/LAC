@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace Tanya.Logging
+namespace LAC.Logging
 {
     public class Logger : ILogger
     {
