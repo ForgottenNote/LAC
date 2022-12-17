@@ -1,11 +1,11 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Logging;
-using Tanya.Driver.Linux;
-using Tanya.Game.Apex;
-using Tanya.Logging;
+using LAC.Driver.Linux;
+using LAC.Game.Apex;
+using LAC.Logging;
 
-namespace Tanya
+namespace LAC
 {
     public static class Startup
     {
