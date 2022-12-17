@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.Hosting;
-using Tanya;
+using LAC;
 
 await Host.CreateDefaultBuilder(args)
     .UseSystemd()
